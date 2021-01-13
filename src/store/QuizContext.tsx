@@ -4,15 +4,15 @@ import { Action, Actions } from "./actions"
 import { initialQuiz, Quiz } from "./Quiz"
 import { Reducer } from "./reducer"
 
-
 /**
  * Quiz context holding session data and leveraging a reducer to alter it
  */
 const QuizContext = React.createContext<[Quiz, React.Dispatch<Action>]>([
   initialQuiz,
-  (action: Action) => { /* Empty */ },
+  (action: Action) => {
+    /* Empty */
+  }
 ])
-
 
 /**
  * Component providing the SessionContext to its children
@@ -35,12 +35,8 @@ const UseQuiz = () => {
   return {
     actions: Actions,
     dispatch,
-    ...state,
+    ...state
   }
 }
 
-export {
-  UseQuiz,
-  QuizContext,
-  QuizProvider,
-}
+export { UseQuiz, QuizContext, QuizProvider }

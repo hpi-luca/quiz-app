@@ -1,21 +1,21 @@
 export interface Quiz {
   questions: Question[]
-  counter: number,
-  questionId: number,
-  question: string,
-  answerOptions: Answer[],
-  answer: string,
-  answersCount: Record<string, number>,
+  counter: number
+  questionId: number
+  question: string
+  answerOptions: Answer[]
+  answer: string
+  score: number
   result: string
 }
 
 export interface Question {
-  question: string,
+  question: string
   answers: Answer[]
 }
 
 export interface Answer {
-  type: string,
+  score: number
   content: string
 }
 
@@ -23,10 +23,9 @@ export const initialQuiz: Quiz = {
   questions: [],
   counter: 0,
   questionId: 1,
-  question: '',
+  question: "",
   answerOptions: [],
-  answer: '',
-  answersCount: {},
-  result: ''
+  answer: "",
+  score: 0,
+  result: ""
 }
-

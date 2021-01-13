@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const Question: React.FC<QuestionProps> = (props) => (
   <h2 className="question">{props.content}</h2>

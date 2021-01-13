@@ -1,5 +1,6 @@
-import { Answer, Quiz } from "./Quiz"
+import { Quiz } from "./Quiz"
 import { Action } from "./actions"
+import { PlagesResultat } from "../data/quiz"
 
 /**
  * Reduce the current state according to the specified action and returns the new state
@@ -9,42 +10,43 @@ import { Action } from "./actions"
 export function Reducer(state: Quiz, action: Action): Quiz {
   switch (action.type) {
     case "setQuestions":
-      return ({
+      return {
         ...state,
         questions: action.questions,
         question: action.questions[0].question,
         answerOptions: action.questions[0].answers
-      })
+      }
     case "setNextQuestion":
       const counter = state.counter + 1
 
-      return ({
+      return {
         ...state,
         counter,
         questionId: state.questionId + 1,
         question: state.questions[counter].question,
         answerOptions: state.questions[counter].answers,
-        answer: ''
-      })
+        answer: ""
+      }
     case "setQuestionAnswer":
-      return ({
+      console.log("test")
+      
+      return {
         ...state,
-        answer: action.answer,
-        answersCount: {
-          ...state.answersCount,
-          [action.answer]: (state.answersCount[action.answer] || 0) + 1
-        },
-      })
+        answer: action.answer.content,
+        score: state.score + action.answer.score
+      }
     case "setResult":
-      let result: [string, number] = ["Undetermined", 0]
-      Object.entries(state.answersCount).forEach((answerCount) => {
-        if(!result || answerCount[1] > result[1]) {
-          result = answerCount
+      let result = "error"
+      PlagesResultat.reverse().forEach((plage) => {
+        console.log(state.score, plage.scoreMin)
+        if (state.score >= plage.scoreMin) {
+          result = plage.message;
         }
       })
-      return ({
+
+      return {
         ...state,
-        result: result[0]
-      })
+        result
+      }
   }
 }
