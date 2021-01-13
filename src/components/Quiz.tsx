@@ -32,12 +32,12 @@ const Quiz: React.FC<QuizProps> = (props) => (
 )
 
 interface QuizProps {
-  answer: string
-  answerOptions: Answer[]
-  question: string
-  questionId: number
-  questionTotal: number
-  onAnswerSelected: (event: any) => void
+  answer: string,
+  answerOptions: Answer[],
+  question: string,
+  questionId: number,
+  questionTotal: number,
+  onAnswerSelected: (event: any) => void,
 }
 
 export default Quiz

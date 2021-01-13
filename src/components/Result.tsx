@@ -19,7 +19,7 @@ const Result: React.FC<ResultProps> = (props) => {
 }
 
 interface ResultProps {
-  quizResult: string
+  quizResult: string,
 }
 
 export default Result

@@ -18,9 +18,9 @@ const AnswerOption: React.FC<AnswerOptionProps> = (props) => (
 )
 
 interface AnswerOptionProps {
-  answerContent: string
-  answer: string
-  onAnswerSelected: (event: any) => void
+  answerContent: string,
+  answer: string,
+  onAnswerSelected: (event: any) => void,
 }
 
 export default AnswerOption

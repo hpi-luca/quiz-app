@@ -8,7 +8,7 @@ const QuestionCount: React.FC<QuestionCountProps> = (props) => (
 
 interface QuestionCountProps {
   counter: number,
-  total: number
+  total: number,
 }
 
 export default QuestionCount

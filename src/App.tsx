@@ -12,8 +12,6 @@ function App() {
 
   React.useEffect(() => {
     quiz.dispatch(quiz.actions.setQuestions(quizQuestions))
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

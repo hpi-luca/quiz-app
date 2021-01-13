@@ -5,7 +5,7 @@ const Question: React.FC<QuestionProps> = (props) => (
 )
 
 interface QuestionProps {
-  content: string
+  content: string,
 }
 
 export default Question;
