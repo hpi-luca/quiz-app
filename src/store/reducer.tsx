@@ -1,6 +1,6 @@
 import { Quiz } from "./Quiz"
 import { Action } from "./actions"
-import { PlagesResultat } from "../data/quiz"
+import { plagesResultat } from "../data/quiz"
 
 /**
  * Reduce the current state according to the specified action and returns the new state
@@ -28,25 +28,23 @@ export function Reducer(state: Quiz, action: Action): Quiz {
         answer: ""
       }
     case "setQuestionAnswer":
-      console.log("test")
-      
       return {
         ...state,
         answer: action.answer.content,
         score: state.score + action.answer.score
       }
     case "setResult":
-      let result = "error"
-      PlagesResultat.reverse().forEach((plage) => {
-        console.log(state.score, plage.scoreMin)
-        if (state.score >= plage.scoreMin) {
-          result = plage.message;
+      let result: { message: string, scoreMin: number } = { message: "lol", scoreMin: 0 }
+
+      plagesResultat.forEach((plage) => {
+        if (state.score >= result.scoreMin && state.score >= plage.scoreMin) {
+          result = plage;
         }
       })
 
       return {
         ...state,
-        result
+        result: result.message
       }
   }
 }

@@ -71,7 +71,7 @@ const quizQuestions: Question[] = [
   }
 ]
 
-export const PlagesResultat = [
+export const plagesResultat = [
   {
     scoreMin: 4,
     message: "Vos stéréotypes de genre sont minimes. <br />Pour vous l’égalité entre les hommes et les femmes au travail est une évidence. Les compétences ne dépendent pas du genre d’une personne et le sexisme au travail vous dérange, voire vous parait inacceptable. D’ailleurs, depuis une loi du 17 août 2015, les agissements sexistes, plus connus sous le nom de sexisme ordinaire, sont pénalement condamnables. N’hésitez pas à en parler à vos collègues et à intervenir lorsque vous êtes témoins d’agissements sexistes au travail. Rendez-vous la semaine prochaine sur l’intranet pour poursuivre la sensibilisationsur le sexisme!"

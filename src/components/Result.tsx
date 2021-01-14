@@ -11,7 +11,7 @@ const Result: React.FC<ResultProps> = (props) => {
     <TransitionGroup appear>
       <CSSTransition classNames="fade" timeout={200}>
         <div className="container result">
-          {props.quizResult}
+          <div dangerouslySetInnerHTML={{ __html: props.quizResult }} />
         </div>
       </CSSTransition>
     </TransitionGroup>
