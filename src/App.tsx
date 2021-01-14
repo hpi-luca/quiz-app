@@ -18,7 +18,8 @@ function App() {
     <div className="App">
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>React Quiz</h2>
+        <h2>CAMPAGNE DE SENSIBILISATION <br />AU SEXISME ETHARCELEMENT SEXUEL</h2>
+        <h3>stéréotype de genre / sexisme ordinaire</h3>
       </div>
       {quiz.result ? (
         <Result quizResult={quiz.result} />

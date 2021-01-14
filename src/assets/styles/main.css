@@ -49,13 +49,15 @@ body {
 
 @media (min-width: 769px) {
   .container {
-    margin: 2.5rem 20px;
+    margin: 2.5rem auto;
   }
 }
 
 /* Result Component */
 .result {
   padding: 1.5rem 2.5rem;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 /* Quiz Component */
