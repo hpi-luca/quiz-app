@@ -1,6 +1,7 @@
 import { Quiz, ResultRange } from "./Quiz"
 import { Action } from "./actions"
 import { plagesResultat } from "../data/quiz"
+import { shuffleAnswers } from "../helpers/utils"
 
 /**
  * Reduce the current state according to the specified action and returns the new state
@@ -12,7 +13,7 @@ export function Reducer(state: Quiz, action: Action): Quiz {
     case "setQuestions":
       return {
         ...state,
-        questions: action.questions,
+        questions: shuffleAnswers(action.questions),
         question: action.questions[0].question,
         answerOptions: action.questions[0].answers
       }
