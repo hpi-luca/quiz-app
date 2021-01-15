@@ -35,7 +35,7 @@ export function Reducer(state: Quiz, action: Action): Quiz {
         score: state.score + action.answer.score
       }
     case "setResult":
-      let resultRange: ResultRange = { message: "lol", illustration: "", scoreMin: 0 }
+      let resultRange: ResultRange = plagesResultat[0]
 
       plagesResultat.forEach((range) => {
         if (state.score >= resultRange.scoreMin && state.score >= range.scoreMin) {

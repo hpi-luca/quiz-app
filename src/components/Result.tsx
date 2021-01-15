@@ -5,7 +5,7 @@ import { ResultRange } from "../store"
 const Result: React.FC<ResultProps> = (props) => {
   // @ts-ignore
   window.gtag("event", "quiz terminé", {
-    "resultat": props.quizResult,
+    "resultat": props.quizResult.level,
   })
 
   return (

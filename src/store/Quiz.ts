@@ -21,6 +21,7 @@ export interface Answer {
 
 export interface ResultRange {
   scoreMin: number,
+  level: "rouge" | "orange" | "vert",
   message: string,
   illustration: string,
 }
