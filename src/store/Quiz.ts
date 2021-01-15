@@ -6,7 +6,7 @@ export interface Quiz {
   answerOptions: Answer[],
   answer: string,
   score: number,
-  result: string,
+  result?: ResultRange,
 }
 
 export interface Question {
@@ -19,6 +19,12 @@ export interface Answer {
   content: string,
 }
 
+export interface ResultRange {
+  scoreMin: number,
+  message: string,
+  illustration: string,
+}
+
 export const initialQuiz: Quiz = {
   questions: [],
   counter: 0,
@@ -27,5 +33,4 @@ export const initialQuiz: Quiz = {
   answerOptions: [],
   answer: "",
   score: 0,
-  result: ""
 }

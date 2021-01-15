@@ -1,4 +1,4 @@
-import { Quiz } from "./Quiz"
+import { Quiz, ResultRange } from "./Quiz"
 import { Action } from "./actions"
 import { plagesResultat } from "../data/quiz"
 
@@ -34,17 +34,17 @@ export function Reducer(state: Quiz, action: Action): Quiz {
         score: state.score + action.answer.score
       }
     case "setResult":
-      let result: { message: string, scoreMin: number } = { message: "lol", scoreMin: 0 }
+      let resultRange: ResultRange = { message: "lol", illustration: "", scoreMin: 0 }
 
-      plagesResultat.forEach((plage) => {
-        if (state.score >= result.scoreMin && state.score >= plage.scoreMin) {
-          result = plage;
+      plagesResultat.forEach((range) => {
+        if (state.score >= resultRange.scoreMin && state.score >= range.scoreMin) {
+          resultRange = range;
         }
       })
 
       return {
         ...state,
-        result: result.message
+        result: resultRange
       }
   }
 }

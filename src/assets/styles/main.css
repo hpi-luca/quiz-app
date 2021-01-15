@@ -68,11 +68,41 @@ body {
   }
 }
 
+.result-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.result-section {
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  justify-items: center;
+  align-items: center;
+}
+
 /* Result Component */
 .result {
+  align-self: center;
   padding: 1.5rem 2.5rem;
   font-size: 20px;
   line-height: 1.6;
+}
+
+.retry-link {
+  /* Style le lien ici */
+}
+
+@media (max-width: 1400px) {
+  .result-section {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .result-illustration {
+    margin-top: 2.5rem;
+  }
 }
 
 /* Quiz Component */
