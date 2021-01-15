@@ -13,12 +13,18 @@ const Result: React.FC<ResultProps> = (props) => {
       <CSSTransition classNames="fade" timeout={200}>
         <div className="result-page">
           <div className="result-section">
-            <img className="result-illustration" src={props.quizResult.illustration} alt=""/>
+            
             <div className="container result">
-              <div dangerouslySetInnerHTML={{ __html: props.quizResult.message }}/>
+              <div className="result-illustration"><img src={props.quizResult.illustration} alt=""/></div>
+              <div className="result-text">
+              <div dangerouslySetInnerHTML={{ __html: props.quizResult.message }}>
+              </div>
+              <a href="/" className="retry-link">Recommencer</a>
+              </div>
+              
             </div>
           </div>
-          <a href="/" className="retry-link">Recommencer</a>
+          
         </div>
       </CSSTransition>
     </TransitionGroup>

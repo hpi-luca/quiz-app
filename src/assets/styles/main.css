@@ -19,9 +19,12 @@ code {
 
 body {
   margin: 0;
+  min-height: 100vh;
   padding: 0;
   background: rgb(19,155,214);
   background: radial-gradient(circle, rgba(19,155,214,1) 0%, rgba(27,33,87,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
@@ -49,7 +52,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 2.5rem 20px;
   background: #fff;
   box-shadow:
@@ -87,7 +90,31 @@ body {
   align-self: center;
   padding: 1.5rem 2.5rem;
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
   line-height: 1.6;
+}
+
+.result-illustration {
+flex: 3;
+display: flex;
+align-items: flex-start;
+height: auto !important;
+}
+
+.result-illustration img {
+  width: 100%;
+  }
+  
+
+.result-text {
+  flex: 4;
+  width: 70%;
+  padding: 0px 30px;
+}
+
+.result-text p {
+  font-size: 18px;
 }
 
 .retry-link {
