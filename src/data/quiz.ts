@@ -1,7 +1,7 @@
 import { Question, ResultRange } from "../store"
-import red from "../assets/images/red.svg"
-import orange from "../assets/images/orange.svg"
-import green from "../assets/images/green.svg"
+import red from "../assets/images/3.png"
+import orange from "../assets/images/2.png"
+import green from "../assets/images/1.png"
 
 const quizQuestions: Question[] = [
   {
@@ -9,7 +9,7 @@ const quizQuestions: Question[] = [
     answers: [
       {
         score: 1,
-        content: "Pas vraiment non"
+        content: "Pourquoi plus les femmes que les hommes ?!"
       },
       {
         score: 2,
