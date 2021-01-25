@@ -60,7 +60,7 @@ const quizQuestions: Question[] = [
     answers: [
       {
         score: 2,
-        content: "Elle a les dents qui rayent le parquet! C’est sûr, elle cherche à sefaire bien voir"
+        content: "Elle a les dents qui rayent le parquet ! C’est sûr, elle cherche à se faire bien voir"
       },
       {
         score: 3,
