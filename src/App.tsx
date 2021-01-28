@@ -19,7 +19,7 @@ function App() {
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>SEXISME - TESTEZ-VOUS !</h2>
-        <h3>stéréotype de genre / sexisme ordinaire</h3>
+        <h3>harcèlement sexuel / agression sexuelle</h3>
       </div>
       {quiz.result ? (
         <Result quizResult={quiz.result} />

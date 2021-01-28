@@ -19,7 +19,7 @@ const Result: React.FC<ResultProps> = (props) => {
               <div className="result-text">
               <div dangerouslySetInnerHTML={{ __html: props.quizResult.message }}>
               </div>
-              <a href="/Altice" className="retry-link">Recommencer</a>
+              <a href="/Altice/3" className="retry-link">Recommencer</a>
               </div>
               
             </div>

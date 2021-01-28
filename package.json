@@ -2,7 +2,7 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://groupe-jlo.com/Altice",
+  "homepage": "http://groupe-jlo.com/Altice/3",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

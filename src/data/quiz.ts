@@ -5,70 +5,70 @@ import green from "../assets/images/1.png"
 
 const quizQuestions: Question[] = [
   {
-    question: "Dans le travail, les femmes sont beaucoup plus rigoureuses que les hommes.",
+    question: "Pascal ne cesse de faire les yeux doux à votre collègue pour qui il a de l’attirance alors qu’elle lui a déjà dit être en couple.",
     answers: [
       {
         score: 1,
-        content: "Pourquoi plus les femmes que les hommes ?!"
+        content: "Son refus était pourtant clair, à répétition cela devient du harcèlement."
       },
       {
         score: 2,
-        content: "C’est plutôt vrai"
+        content: "Il doit vraiment être accro pour revenir à la charge comme ça, c’est limite attendrissant."
       },
       {
         score: 3,
-        content: "Complètement d’accord"
+        content: "Il n’y a pas de mal à vouloir séduire, sur un malentendu sait-on jamais !"
       }
     ]
   },
   {
-    question: "Les postes à responsabilité sont plus faits pour les hommes que pour les femmes.",
+    question: "A la pause, les collègues de Paul lui font régulièrement remarquer qu’il a de « belles fesses ».",
     answers: [
       {
         score: 3,
-        content: "Évidemment un homme sera bien meilleur pour prendre des décisions surtout sur des sujets pointus"
+        content: "C’est plutôt flatteur."
       },
       {
         score: 2,
-        content: "Manager des hommes, pour une femme c’est loin d’être naturel"
+        content: "C’est un peu gênant mais pas très grave."
       },
       {
         score: 1,
-        content: "Je ne crois pas, cela dépend surtout des personnalités"
+        content: "Cela peut être qualifié de harcèlement sexuel."
       }
     ]
   },
   {
-    question: "Que pensez-vous des hommes qui partagent leurs doutes et leurs émotions au travail?",
+    question: "Une stagiaire sortant de l’ascenseur se fait caresser les fesses par un collègue sous le regard rieur des autres collègues.",
     answers: [
       {
         score: 3,
-        content: "C’est un signe de faiblesse, ils n’évolueront jamais"
+        content: "C’est drôle, il tente sa chance."
       },
       {
         score: 2,
-        content: "C’est beaucoup plus accepté de la part des femmes"
+        content: "C’est un peu déplacé."
       },
       {
         score: 1,
-        content: "C’est juste un être humain"
+        content: "C’est humiliant et de l’ordre de l’agression sexuelle."
       }
     ]
   },
   {
-    question: "Que pensez-vous d’une femme qui s’exprime beaucoup dans une réunion en présence de la direction ?",
+    question: "Lors d’un afterwork, un manager propose une promotion à une collaboratrice en échange de faveurs sexuelles.",
     answers: [
       {
         score: 2,
-        content: "Elle a les dents qui rayent le parquet ! C’est sûr, elle cherche à se faire bien voir"
+        content: "C’est désobligeant."
       },
       {
         score: 3,
-        content: "Elle est tellement loquace que cela en est ridicule"
+        content: "Rien d’étonnant vu ses attributs physiques."
       },
       {
         score: 1,
-        content: "Sacrée implication, le sujet la passionne"
+        content: "C’est une pression grave, il risque gros et même la prison."
       }
     ]
   }
@@ -78,19 +78,19 @@ export const plagesResultat: ResultRange[] = [
   {
     scoreMin: 4,
     level: "vert",
-    message: "<h3 style='font-size: 25px; line-height:1.5;'>Vos stéréotypes de genre sont minimes.</h3><p>Pour vous l’égalité entre les hommes et les femmes au travail est une évidence. Les compétences ne dépendent pas du genre d’une personne et le sexisme au travail vous dérange, voire vous parait inacceptable. <br><br>D’ailleurs, depuis une loi du 17 août 2015, les agissements sexistes, plus connus sous le nom de sexisme ordinaire, sont pénalement condamnables. <br><br>N’hésitez pas à en parler à vos collègues et à intervenir lorsque vous êtes témoins d’agissements sexistes au travail.<br><br><b>Rendez-vous la semaine prochaine sur l’intranet pour poursuivre la sensibilisation sur le sexisme!</b></p>",
+    message: "<h3 style='font-size: 25px; line-height:1.5;'>Bravo ! Pour vous la différence entre la drague, l’agression sexuelle et le harcèlement sexuel est bien claire.</h3><p>Vous avez bien compris que quand un(e) collègue dit « non » à des avances, le fait d’insister de façon répétée crée une situation intimidante, voire offensante.<br><br>Restons vigilants car les personnes victimes n’osent pas toujours exprimer leur non-consentement. Pourtant, il peut aussi s’agir de harcèlement sexuel.<br><br>Les propos ou comportements à connotation sexuelle ou sexiste imposés à un(e) collègue sont passibles de sanctions pénales, civiles et disciplinaires, y compris s’ils sont commis en dehors du travail.<br><br><b>Pour en savoir plus, visionnez la vidéo « Sexisme, harcèlement sexuel » sur l’Intranet et contactez vos référents entreprise ou CSE.<br><br>Ensemble luttons contre le sexisme et le harcèlement sexuel au travail !</b></p>",
     illustration: green,
   },
   {
     scoreMin: 7,
     level: "orange",
-    message: "<h3 style='font-size: 25px; line-height:1.5;'>Vos stéréotypes de genre sont modérés. </h3><p>Des stéréotypes nous en avons tous. Ils se construisent depuis l’enfance, permettent à notre cerveau de décrypter le monde rapidement et sont plus ou moins accentués selon nos croyances et nos schémas normatifs de pensée. <br><br>Vous avez plutôt conscience de ces stéréotypes et c’est important pour ne pas les laisser prendre le pouvoir de notre perception et de nos actes au risque d’inférioriser un sexe par rapport à un autre. <br><br>D’ailleurs, depuis une loi du 17 août 2015, les agissements sexistes, plus connus sous le nom de sexisme ordinaire, sont pénalement condamnables. <br><br><b>Rendez-vous la semaine prochaine sur l’intranet pour poursuivre la sensibilisation sur le sexisme!</b></p>",
+    message: "<h3 style='font-size: 25px; line-height:1.5;'>Attention, vous avez tendance minimiser la gravité de certains actes !</h3><p>Quand un(e) collègue dit « non » à des avances, le fait d’insister de façon répétée crée une situation intimidante, voire offensante et conduit à du harcèlement sexuel.<br><br>Les propos ou comportements à connotation sexuelle ou sexiste imposés à un(e) collègue sont passibles de sanctions pénales, civiles et disciplinaires, y compris s’ils sont commis en dehors du travail.<br><br><b>Pour en savoir plus, visionnez la vidéo « Sexisme, harcèlement sexuel » sur l’Intranet et contactez vos référents entreprise ou CSE.<br><br>Ensemble luttons contre le sexisme et le harcèlement sexuel au travail !</b></p>",
     illustration: orange,
   },
   {
     scoreMin: 10,
     level: "rouge",
-    message: "<h3 style='font-size: 25px; line-height:1.5;'>Vos stéréotypes de genre sont prononcés.</h3><p>Des stéréotypes nous en avons tous. Ils se construisent depuis l’enfance, permettent à notre cerveau de décrypter le monde rapidement et sont plus ou moins accentués selon nos croyances et nos schémas normatifs de pensée.<br><br> Il est très important d’en avoir conscience pour ne pas laisser nos stéréotypes prendre le pouvoir de notre perception et de nos actes au risque d’inférioriser un sexe par rapport à un autre. <br><br>D’ailleurs, depuis une loi du 17 août 2015, les agissements sexistes, plus connus sous le nom de sexisme ordinaire, sont pénalement condamnables. <br><br><b>Rendez-vous la semaine prochaine sur l’intranet pour poursuivre la sensibilisation sur le sexisme!</b></p>",
+    message: "<h3 style='font-size: 25px; line-height:1.5;'>Attention, vous confondez séduction et harcèlement sexuel !</h3><p>Pour vous une personne qui se fait draguer avec insistance et se fait caresser les fesses au travail n’a qu’à savoir dire « non ».<br><br>Pourtant ce type de comportements est offensant, voire humiliant et peut intimider ou inférioriser. Il s’agit bien de harcèlement sexuel ou d’agression sexuelle selon les cas.<br><br>Ces propos ou comportements imposés à un(e) collègue sont passibles de sanctions pénales, civiles et disciplinaires.<br><br><b>Pour en savoir plus, visionnez la vidéo « Sexisme, harcèlement sexuel » sur l’Intranet et contactez vos référents entreprise ou CSE.<br><br>Ensemble luttons contre le sexisme et le harcèlement sexuel au travail !</b></p>",
     illustration: red,
   },
 ]
