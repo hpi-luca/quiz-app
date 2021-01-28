@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.zip
 
 # testing
 /coverage
@@ -25,3 +26,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+week1.zip
+week2.zip
+week3.zip
